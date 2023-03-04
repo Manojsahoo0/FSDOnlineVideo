@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Contact Frorm</title>
+    </head>
+    <body>
+        <form action="">
+            <table style="background-color: aqua;">
+                <tbody>
+                    <tr>
+                        <td><label for="name" >Name</label></td>
+                        <td><input type="text" id="name" required></td>
+                    </tr>
+                    <tr>
+                            <td><label for="email">Email</label></td>
+                            <td><input type="email" id="email" required></td>
+                    </tr>
+                    <tr>
+                            <td><label for="phone">Phone</label></td>
+                            <td><input type="tel" id="phone"></td>
+                    </tr>
+                    <tr>
+                            <td><label>Gender</label>
+                            <td><input type="radio" name="gender" id="Male">Male
+                                <input type="radio" name="gender" id="Female">Female</td>
+                    </tr>
+                    <tr>
+                            <td><label for="profession">Profession</label></td>
+                            <td><input type="text" id="profession" list="professions">
+
+                                <datalist id="professions">
+                                    <option value="Govt. Official"></option>
+                                    <option value="Private"></option>
+                                    <option value="Teacher"></option>
+                                    <option value="Labour"></option>
+                                </datalist></td>
+                    </tr>
+                    <tr>
+                            <td><label for="message">Message</label></td>
+                            <td><textarea name="message" id="message" cols="30" rows="10" style="vertical-align: top;"></textarea></td>
+                    </tr>
+                    <tr>
+                            <td colspan="2"><input type="checkbox" required> I accept the terms and conditions</td>
+                    </tr>
+                    <tr>
+                            <td><button type="reset">Reset</button></td>
+                            <td style="text-align: right;"><button type="submit" style="text-align: right;">Submit</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>

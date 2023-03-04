@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Form Creation</title>
+    </head>
+    <body>
+        <form action="" method="">
+            <div>
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" value="Manoj" readonly> <!--value is used to specify the default value-->
+            </div>                                                          <!--readonly used for making readonly-->
+            <div>
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name">
+            </div>
+            <div>
+                <label for="address">Address</label>
+                <input type="text" id="address">
+            </div>
+            <div>
+                <label>Favorite movies</label>
+                <input type="radio" name="movies" id="bruce_lee">Bruce Lee
+                <input type="radio" name="movies" id="kashmir" checked>Kashmir
+            </div>
+            <div>
+                <label>Favorite movies</label>
+                <input type="checkbox" name="movies" id="bruce_lee">Bruce Lee     <!--checked for putting default value-->
+                <input type="checkbox" name="movies" id="kashmir">Kashmir
+            </div>
+            <div>
+                <label for="height">Height</label>
+                <select name="height" id="height">
+                    <option value="tall">Tall</option>
+                    <option value="small" selected >Small</option>  <!--selected to put this as default-->
+                </select>
+            </div>
+            <div>
+                <label for="brand">Select Brand</label>
+                <input type="text" id="brand" list="brands">
+
+                <datalist id="brands">
+                    <option value="Reebok"></option>
+                    <option value="Nike"></option>
+                    <option value="Addidas"></option>
+                    <option value="Skechers"></option>
+                </datalist>
+            </div>
+            <div>
+                <label for="about" style="vertical-align: top;">About You</label>
+                <textarea name="about" id="about" cols="30" rows="10" disabled>I am a..</textarea> <!--disabled used for making field disabled-->
+            </div>
+            <div>
+                <button type="submit" style="background-color: aqua; padding: 5px ;">Submit</button>
+                <button type="reset">Reset</button>
+                <button type="button">Click Me</button>
+                <button type="menu">menu</button>
+            </div>
+        </form>
+    </body>
+</html>
